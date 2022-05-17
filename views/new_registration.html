@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My To Do app</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="background">
+          <h2 class='title'>Sign up</h2>
+        </div>
+        <div class="content sign-up">
+          <div id='errors'></div>
+
+          <form action="/sign_up" method="POST">
+            <input type="text" name="name" placeholder="Name"></input>
+            <input type="email" name="email" placeholder="Email"></input>
+            <input type="password" name="password" placeholder="Password"></input>
+            <input type="submit" value="Sign up"></input>
+          </form>
+
+          <a href="/sign_in">Already have an account? Sign in</a>
+        </div>
+    </div>
+    <script src="js/session.js"></script>
+</body>
+</html>
